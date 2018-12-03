@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Daniel Peck's Project Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieljpeck/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "project"
+  ],
+  "author": "Daniel Peck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieljpeck/portfolio/issues"
+  },
+  "homepage": "https://github.com/danieljpeck/portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.12"
+  }
+}
