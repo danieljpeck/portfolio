@@ -3,6 +3,9 @@ var exphbs = require('express-handlebars');
 
 var app = express();
 
+app.use(express.static('assets/css'));
+app.use(express.static('assets/images'));
+
 app.engine('.hbs', exphbs({
   defaultLayout: 'main',
   extname: '.hbs'

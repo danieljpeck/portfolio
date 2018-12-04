@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node server.js"
+    "build": "gulp sass && node server.js",
+    "watch": "gulp sass:watch"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,12 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.12"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.10.0",
+    "should": "^13.2.3"
   }
 }

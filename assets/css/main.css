@@ -1,0 +1,52 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
+.navigation-overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 57, 57, 0.8);
+  background-color: rgba(255, 57, 57, 0.8);
+  overflow-x: hidden;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  display: none; }
+  .navigation-overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: left;
+    margin-top: 40px;
+    padding-left: 40px; }
+  .navigation-overlay h3 {
+    font-size: 48px;
+    margin-bottom: 0px; }
+
+.navigation-overlay a {
+  padding: 8px 0px 0px 0px;
+  text-decoration: none;
+  font-size: 48px;
+  color: #EDEDED;
+  display: block;
+  transition: 0.3s; }
+  .navigation-overlay a:hover, .navigation-overlay a:focus {
+    color: #BCBCBC; }
+
+.navigation-overlay .closebtn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 60px; }
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
