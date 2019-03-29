@@ -1,52 +1,49 @@
+.splash-screen-container {
+  margin: auto;
+  max-width: 640px;
+  margin-top: 16px;
+  padding: 16px;
+  font-size: 24px;
+  line-height: 32px; }
+  .splash-screen-container p {
+    margin-top: 40px; }
+  .splash-screen-container p::selection {
+    background: #bcbcbc; }
+  .splash-screen-container b::selection {
+    background: #bcbcbc; }
+  .splash-screen-container a::selection {
+    background: #bcbcbc; }
+
+@media only screen and (min-width: 768px) {
+  .splash-screen-container {
+    margin-top: 48px;
+    padding: 24px; } }
+
 body {
-  font-family: 'Lato', sans-serif; }
+  background-color: #303030;
+  color: #f6f6f6; }
 
-.navigation-overlay {
-  height: 100%;
+a {
+  color: #00FBC1; }
+  a:hover {
+    color: #01D4A4;
+    transition: 0.1s; }
+
+.footer {
   width: 100%;
-  opacity: 0;
+  background-color: #404040;
+  height: 40px;
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 57, 57, 0.8);
-  background-color: rgba(255, 57, 57, 0.8);
-  overflow-x: hidden;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  display: none; }
-  .navigation-overlay-content {
-    position: relative;
-    top: 15%;
+  bottom: 0px;
+  box-sizing: border-box;
+  left: 0px; }
+  .footer-container {
+    margin: auto;
+    max-width: 640px;
     width: 100%;
-    text-align: left;
-    margin-top: 40px;
-    padding-left: 40px; }
-  .navigation-overlay h3 {
-    font-size: 48px;
-    margin-bottom: 0px; }
-
-.navigation-overlay a {
-  padding: 8px 0px 0px 0px;
-  text-decoration: none;
-  font-size: 48px;
-  color: #EDEDED;
-  display: block;
-  transition: 0.3s; }
-  .navigation-overlay a:hover, .navigation-overlay a:focus {
-    color: #BCBCBC; }
-
-.navigation-overlay .closebtn {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  font-size: 60px; }
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px; }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px; } }
+    padding-top: 8px; }
+  .footer-link {
+    padding-left: 5px; }
+    .footer-link img {
+      height: 24px;
+      width: auto; }

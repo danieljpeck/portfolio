@@ -3,6 +3,8 @@ var exphbs = require('express-handlebars');
 
 var app = express();
 
+var router = express.Router();
+
 app.use(express.static('assets/css'));
 app.use(express.static('assets/images'));
 

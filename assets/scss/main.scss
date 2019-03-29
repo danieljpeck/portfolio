@@ -1,62 +1,64 @@
-body {
-    font-family: 'Lato', sans-serif;
-}
+.splash-screen-container {
+    margin: auto;
+    max-width: 640px;
+    margin-top: 16px;
+    padding: 16px;
+    font-size: 24px;
+    line-height: 32px;
 
-.navigation-overlay {
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 57, 57, 0.8);
-  background-color: rgba(255, 57, 57, 0.8);
-  overflow-x: hidden;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  display:none;
-  &-content {
-    position: relative;
-    top: 15%;
-    width: 100%;
-    text-align: left;
-    margin-top: 40px;
-    padding-left: 40px;
-  }
-  h3 {
-    font-size: 48px;
-    margin-bottom:0px;
-  }
-}
-
-
-.navigation-overlay a {
-    padding: 8px 0px 0px 0px;
-    text-decoration: none;
-    font-size: 48px;
-    color: #EDEDED;
-    display: block;
-    transition: 0.3s;
-    &:hover, &:focus {
-      color: #BCBCBC;
+    p {
+        margin-top: 40px;
+    }
+    p::selection {
+        background: #bcbcbc;
+    }
+    b::selection {
+        background: #bcbcbc;
+    }
+    a::selection {
+        background: #bcbcbc;
     }
 }
 
-.navigation-overlay .closebtn {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    font-size: 60px;
+@media only screen and (min-width: 768px) {
+    .splash-screen-container {
+        margin-top: 48px;
+        padding: 24px;
+    }
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+body {
+    background-color: #303030;
+    color: #f6f6f6;
 }
 
+a {
+    color: #00FBC1;
+    &:hover {
+        color: #01D4A4;
+        transition: 0.1s;
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: #404040;
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    box-sizing: border-box;
+    left: 0px;
+    &-container {
+        margin: auto;
+        max-width: 640px;
+        width: 100%;
+        padding-top:8px;
+    }
+    &-link {
+        padding-left: 5px;
+        img {
+            height: 24px;
+            width: auto;
+        }
+    }
+}

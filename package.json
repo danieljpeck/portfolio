@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp sass && node server.js",
-    "watch": "gulp sass:watch"
+    "build": "gulp default",
+    "watch": "gulp sass && nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -23,15 +23,18 @@
   },
   "homepage": "https://github.com/danieljpeck/portfolio#readme",
   "dependencies": {
+    "browser-sync": "^2.26.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.12"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.4.2",
     "gulp-sass": "^4.0.2",
     "mocha": "^5.2.0",
     "node-sass": "^4.10.0",
+    "nodemon": "^1.18.10",
     "should": "^13.2.3"
   }
 }
