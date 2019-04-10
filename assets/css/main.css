@@ -1,0 +1,49 @@
+.splash-screen-container {
+  margin: auto;
+  max-width: 640px;
+  margin-top: 16px;
+  padding: 16px;
+  font-size: 24px;
+  line-height: 32px; }
+  .splash-screen-container p {
+    margin-top: 40px; }
+  .splash-screen-container p::selection {
+    background: #bcbcbc; }
+  .splash-screen-container b::selection {
+    background: #bcbcbc; }
+  .splash-screen-container a::selection {
+    background: #bcbcbc; }
+
+@media only screen and (min-width: 768px) {
+  .splash-screen-container {
+    margin-top: 48px;
+    padding: 24px; } }
+
+body {
+  background-color: #303030;
+  color: #f6f6f6; }
+
+a {
+  color: #00FBC1; }
+  a:hover {
+    color: #01D4A4;
+    transition: 0.1s; }
+
+.footer {
+  width: 100%;
+  background-color: #404040;
+  height: 40px;
+  position: fixed;
+  bottom: 0px;
+  box-sizing: border-box;
+  left: 0px; }
+  .footer-container {
+    margin: auto;
+    max-width: 640px;
+    width: 100%;
+    padding-top: 8px; }
+  .footer-link {
+    padding-left: 5px; }
+    .footer-link img {
+      height: 24px;
+      width: auto; }
