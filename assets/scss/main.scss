@@ -1,64 +1,88 @@
 .splash-screen-container {
-    margin: auto;
-    max-width: 640px;
-    margin-top: 16px;
-    padding: 16px;
-    font-size: 24px;
-    line-height: 32px;
+  margin: auto;
+  max-width: 640px;
+  margin-top: 160px;
+  padding: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 40px;
 
-    p {
-        margin-top: 40px;
-    }
-    p::selection {
-        background: #bcbcbc;
-    }
-    b::selection {
-        background: #bcbcbc;
-    }
-    a::selection {
-        background: #bcbcbc;
-    }
+  p {
+    margin-top: 40px;
+  }
+
+  p::selection {
+    background: #bcbcbc;
+  }
+
+  b::selection {
+    background: #bcbcbc;
+  }
+
+  a::selection {
+    background: #bcbcbc;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .splash-screen-container {
-        margin-top: 48px;
-        padding: 24px;
+  .splash-screen-container {
+    margin-top: 48px;
+    padding: 24px;
+  }
+  .footer {
+    &-container {
+      padding-left:0px;
     }
+  }
 }
 
 body {
-    background-color: #303030;
-    color: #f6f6f6;
+  background-color: #303030;
+  color: #f6f6f6;
 }
 
 a {
-    color: #00FBC1;
-    &:hover {
-        color: #01D4A4;
-        transition: 0.1s;
-    }
+  color: #00FBC1;
+
+  &:hover {
+    color: #01D4A4;
+    transition: 0.1s;
+  }
 }
 
 .footer {
+  width: 100%;
+  background-color: #404040;
+  height: 40px;
+  position: fixed;
+  bottom: 0px;
+  box-sizing: border-box;
+  left: 0px;
+
+  &-container {
+    margin: auto;
+    max-width: 640px;
     width: 100%;
-    background-color: #404040;
-    height: 40px;
-    position: fixed;
-    bottom: 0px;
-    box-sizing: border-box;
-    left: 0px;
-    &-container {
-        margin: auto;
-        max-width: 640px;
-        width: 100%;
-        padding-top:8px;
+    padding-top: 8px;
+    padding-left:16px;
+  }
+
+  &-link {
+    padding-left: 5px;
+
+    img {
+      height: 24px;
+      width: auto;
+
+      .small {
+        height: 22px;
+        width: auto;
+      }
+
+      // svg {
+      //     height: 22px;
+      //     width: auto;
+      // }
     }
-    &-link {
-        padding-left: 5px;
-        img {
-            height: 24px;
-            width: auto;
-        }
-    }
+  }
 }

@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "gulp sass && nodemon server.js"
+    "start": "gulp sassCompile && node server.js",
+    "watch": "gulp default && nodemon server.js",
+    "me": "gulp default"
   },
   "engines": {
     "node": "^8.11.1",
@@ -33,10 +34,10 @@
     "handlebars": "^4.0.12"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-nodemon": "^2.4.2",
     "gulp-sass": "^4.0.2",
-    "mocha": "^5.2.0",
+    "mocha": "^8.3.0",
     "node-sass": "^4.10.0",
     "nodemon": "^1.18.10",
     "should": "^13.2.3"
