@@ -38,7 +38,7 @@
     "gulp-nodemon": "^2.4.2",
     "gulp-sass": "^4.0.2",
     "mocha": "^8.3.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.18.10",
     "should": "^13.2.3"
   }
