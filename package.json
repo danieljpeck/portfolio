@@ -29,7 +29,7 @@
   "homepage": "https://github.com/danieljpeck/portfolio#readme",
   "dependencies": {
     "browser-sync": "^2.26.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.12"
   },
